@@ -1,7 +1,14 @@
 import { SafeAreaView } from 'react-native';
+import { className } from "postcss-selector-parser";
 
-export const Container = ({ children }: { children: React.ReactNode }) => {
-  return <SafeAreaView className={styles.container}>{children}</SafeAreaView>;
+export const Container = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return <SafeAreaView className={`${styles.container}`}>{children}</SafeAreaView>;
 };
 
 const styles = {

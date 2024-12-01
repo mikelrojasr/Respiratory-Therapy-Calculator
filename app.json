@@ -3,7 +3,7 @@
     "name": "respiratory-therapy-calculator",
     "slug": "respiratory-therapy-calculator",
     "version": "1.0.0",
-
+    "newArchEnabled": true,
     "scheme": "respiratory-therapy-calculator",
     "web": {
       "bundler": "metro",
