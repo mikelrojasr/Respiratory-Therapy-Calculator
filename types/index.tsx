@@ -1,4 +1,5 @@
 import { TextInputProps, TextProps } from 'react-native';
+import { ExternalPathString, RelativePathString } from "expo-router";
 
 export type CustomInputProps = {
   label?: string;
@@ -13,3 +14,10 @@ export type TitleProps = {
   containerClassName?: string;
   textClassName?: string;
 } & TextProps;
+
+export type FormulaCardProps = {
+  path: RelativePathString | ExternalPathString;
+  label: string;
+  name: string | number;
+  containerClassName?: string;
+};

@@ -4,10 +4,7 @@ import { TextInput, View, Text } from 'react-native';
 import { CustomInputProps } from '~/types';
 
 export const CustomInput = forwardRef<TextInput, CustomInputProps>(
-  (
-    { label, error, placeholder, containerClassName, inputClassName, ...textInputProps },
-    ref
-  ) => {
+  ({ label, error, placeholder, containerClassName, inputClassName, ...textInputProps }, ref) => {
     return (
       <View className={`mb-2 w-full items-center ${containerClassName}`}>
         {label && <Text className="mb-2 font-semibold text-gray-700">{label}</Text>}
